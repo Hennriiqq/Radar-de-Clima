@@ -6,7 +6,7 @@ Projeto desenvolvido como parte do meu portfólio, aplicando na prática os fund
 
 ##  Site :
 
-*(adicione aqui o link do GitHub Pages ou onde o projeto estiver publicado)*
+*https://hennriiqq.github.io/Radar-de-Clima/*
 
 ##  Funcionalidades
 
