@@ -76,8 +76,6 @@ Dados são traduzidos e exibidos na tela
 ├── script.js       # Lógica de busca, consumo de API e renderização
 └── README.md
 ```
-
-
 ##  Sobre o projeto
 
 Este projeto foi desenvolvido como parte da minha jornada de aprendizado em JavaScript, aplicando na prática conceitos como objetos, destructuring, closures, async/await e tratamento de erros — consolidados em um projeto real de consumo de API.
