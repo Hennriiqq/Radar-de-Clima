@@ -80,6 +80,4 @@ Dados são traduzidos e exibidos na tela
 
 Este projeto foi desenvolvido como parte da minha jornada de aprendizado em JavaScript, aplicando na prática conceitos como objetos, destructuring, closures, async/await e tratamento de erros — consolidados em um projeto real de consumo de API.
 
-Desenvolvido por Henrique — LinkedIn · GitHub---
-
 Desenvolvido por **Henrique** — [LinkedIn](#) · [GitHub](#)
