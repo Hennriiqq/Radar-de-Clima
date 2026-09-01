@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(20,20,30,0.15), rgba(20,20,30,0.35)), url('assets/images/fundo\ Clima.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px;
+  color: #fff;
+}
+
+.busca {
+  size: 700px;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 340px;
+}
+
+#inputCidade {
+  flex: 1;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 100px;
+  padding: 10px 16px;
+  color: #fff;
+  font-size: 13px;
+  outline: none;
+}
+
+#inputCidade::placeholder { color: rgba(255,255,255,0.6); }
+#inputCidade:focus { border-color: #fff; }
+
+#buscar {
+  background: rgba(255,255,255,0.9);
+  border: none;
+  border-radius: 100px;
+  padding: 10px 18px;
+  color: #111;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#buscar:disabled { opacity: 0.5; cursor: not-allowed; }
+
+#carregando {
+  color: rgba(255,255,255,0.75);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#error {
+  margin-top: 50px;
+  color: #FFB4B4;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* ---- Card principal (vidro fosco) ---- */
+.card {
+  width: 100%;
+  max-width: 402px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 28px;
+  padding: 22px;
+}
+
+.linha-topo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  
+}
+
+.icone-principal { font-size: 44px; }
+
+.data-hora {
+  font-size: 12px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 2px;
+}
+
+.titulo-clima {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.cidade-nome {
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+}
+
+/* ---- Linha do sol ---- */
+.linha-sol {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 12px;
+}
+
+.min-max {
+  border-radius: 14px;
+  padding: 12px 16px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.min-smax strong { color: #7EC8FF; }
+
+.separador { color: rgba(255,255,255,0.4); }
+
+/* ---- Pill de chuva ---- */
+.pill-chuva {
+  background: rgba(20,25,35,0.55);
+  border-radius: 14px;
+  padding: 12px 16px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.pill-chuva strong { color: #7EC8FF; }
+
+/* ---- Linha extra (vento) ---- */
+.linha-extra {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: rgba(255,255,255,0.75);
+  padding: 0 4px 18px;
+}
+
+/* ---- Dias (formato pílula vertical) ---- */
+.dias-scroll {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+}
+
+.dia-pill {
+  flex: 0 0 auto;
+  width: 44px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 100px;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+}
+
+.dia-pill.hoje { background: rgba(255,255,255,0.28); }
+
+.dia-pill .nome-dia { color: rgba(255,255,255,0.75); font-weight: 500; }
+.dia-pill .emoji-dia { font-size: 16px; }
+.dia-pill .max { font-weight: 600; }
+.dia-pill .min { color: rgba(255,255,255,0.55); }

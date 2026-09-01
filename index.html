@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clima</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="busca">
+    <input type="text" id="inputCidade" placeholder="Digite uma cidade...">
+    <button id="buscar">buscar</button>
+  </div>
+
+  <div id="carregando"></div>
+  <div id="error"></div>
+
+
+
+  <div class="card" id="card" style="display:none;">
+
+
+    <div class="linha-topo">
+      <span class="icone-principal" id="iconePrincipal"></span>
+      <div class="info-topo">
+        <p class="data-hora" id="dataHora"></p>
+        <p class="titulo-clima" id="tituloClima"></p>
+        <p class="cidade-nome" id="cidadeNome"></p>
+        <div class="min-max" id="min-max"></div>
+      </div>
+    </div>
+
+    <div class="linha-sol">
+      <span id="nascerSol"></span>
+      <span class="separador">—</span>
+      <span id="duracaoDia"></span>
+      <span class="separador">—</span>
+      <span id="porSol"></span>
+    </div>
+
+    <div class="pill-chuva" id="pillChuva"></div>
+
+    <div class="linha-extra">
+      <span id="ventoInfo"></span>
+    </div>
+
+   
+
+    <div class="dias-scroll" id="previsao"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
